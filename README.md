@@ -1,2 +1,0 @@
-# Ecosiles
-Mi aplicación
