@@ -66,11 +66,11 @@ a:hover { color: white; font-family: "Open Sans", sans-serif; text-decoration: n
 
 
 
-/* .mensaje{
+.mensaje{
     display: none;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 361px) {
     body{
         overflow: hidden;
     }
@@ -90,4 +90,4 @@ a:hover { color: white; font-family: "Open Sans", sans-serif; text-decoration: n
         position: relative;
         z-index: 1000;
     }
-} */
+}
