@@ -70,7 +70,7 @@ a:hover { color: white; font-family: "Open Sans", sans-serif; text-decoration: n
     display: none;
 }
 
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 576px) {
     body{
         overflow: hidden;
     }
