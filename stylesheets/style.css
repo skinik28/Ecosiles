@@ -1,43 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.caja{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-    border-radius: 20px;
-    position: absolute;
-    animation-name: animacion;
-    animation: animacion 4s;
-    animation-timing-function: cubic-bezier(.22,.72,1,.57);
-    animation-delay: 2s;
-    animation-iteration-count: 1000;
-    animation-direction: alternate, reverse, normal;
+    scroll-behavior: auto !important;
 }
 
-@keyframes animacion{
-    0%{background-color: lightblue;
-        top: 0;
-        left: 0;
+a:link { text-decoration: none; }
+a:visited { color: white; font-family: "Open Sans", sans-serif; text-decoration: none; }
+a:hover { color: white; font-family: "Open Sans", sans-serif; text-decoration: none; }
+
+.pantalla {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+}
+
+.boton-primario {
+    width: 320px;
+    padding: 14px 0; /* Relleno interno */
+    background-color: #FF3333; /* Color de fondo por defecto */
+    border: none; /* Sin borde */
+    border-radius: 16px; /* Bordes redondeados */
+}
+
+.boton-primario a {
+    text-align: center; /* Centra el texto */
+    line-height: 16px; /* Alinea verticalmente el texto (ajusta según sea necesario) */
+    display: block; /* Asegúrate de que el enlace ocupe todo el botón */
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px; /* Tamaño de la fuente */
+    font-weight: 700;
+}
+
+.boton-secundario {
+    width: 320px;
+    padding: 13px 0; /* Relleno interno */
+    background-color: white; /* Color de fondo por defecto */
+    border: 1px solid #999999; /* Sin borde */
+    border-radius: 16px; /* Bordes redondeados */
+}
+
+.boton-secundario a {
+    display: block; /* Asegúrate de que el enlace ocupe todo el botón */
+    width: 100%;
+    height: 100%;
+    text-align: center; /* Centra el texto */
+    line-height: 16px; /* Alinea verticalmente el texto (ajusta según sea necesario) */
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px; /* Tamaño de la fuente */
+    font-weight: 700;
+}
+
+.pantalla-crear-iniciar {
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn-crear-iniciar{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+.mensaje{
+    display: none;
+}
+
+@media screen and (min-width: 361px) {
+    body{
+        overflow: hidden;
     }
-    25%{background-color: lightcoral;
-        top: 0;
-        left: 400px;
-    }
-    50%{background-color: lightgoldenrodyellow;
+    .mensaje{
+        display: unset;
+        display: flex;
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+        background-color:gray;
+        color: cornsilk;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        text-align: center;
         position: relative;
-        top: 400px;
-        left: 400px;
-    }
-    75%{background-color: lightgray;
-        top: 400px;
-        left: 0;
-    }
-    100%{background-color: lightgreen;
-        top: 0;
-        left: 0;
+        z-index: 1000;
     }
 }
