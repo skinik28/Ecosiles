@@ -2,9 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=360, initial-scale=3.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport">
+    <!-- <meta name="viewport" content="width=360, initial-scale=3.0"> -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Ecosiles</title>
+
+    <script>
+        // Función para cambiar el viewport en modo inspector
+        function adjustViewport() {
+            const viewport = document.getElementById('viewport');
+            if (window.innerWidth > 768) { // Verifica si el ancho del viewport es mayor que 768px
+                viewport.setAttribute('content', 'width=360, initial-scale=3.0');
+            } else {
+                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+            }
+        }
+
+        window.addEventListener('resize', adjustViewport);
+        window.addEventListener('DOMContentLoaded', adjustViewport);
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
