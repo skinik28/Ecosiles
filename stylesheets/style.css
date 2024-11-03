@@ -1,73 +1,196 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: white;
     scroll-behavior: auto !important;
 }
 
-a:link { text-decoration: none; }
-a:visited { color: white; font-family: "Open Sans", sans-serif; text-decoration: none; }
-a:hover { color: white; font-family: "Open Sans", sans-serif; text-decoration: none; }
+a:link {text-decoration: none }
+a:visited {color: white;  font-family: arial; text-decoration: none }
+a:hover { color: white; font-family: arial; text-decoration: none }
 
-.pantalla {
+
+.row{
+    margin: 0;
+}
+.perfil{
+    width: 40px;
+    height: 40px;
+}
+.preload{
+    background: rgb(27,2,96);
+    background: linear-gradient(0deg, rgba(27,2,96,1) 0%, rgba(102,0,204,1) 92%);
+    background-size: cover;
     width: 100%;
     height: 100vh;
-    padding: 20px;
+    display: none;
+}
+.fondo{
+    width: 200px;
+}
+
+.marca {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+.containerfluid{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.principal{
+    margin: 0;
+    background: linear-gradient(0deg, rgba(27,2,96,1) 0%, rgba(102,0,204,1) 92%);
+    width: 100%;
+    height: 100vh;
+}
+button{
+    margin: 0;
+}
+.btn{
+    width: 85%;
+    
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(70, 4, 252) 0%, rgba(102,0,204,1) 92%) !important;
+}
+a{
+    text-decoration: none;
+    color: azure;
+    
+}
+
+#header_main{
+    height: 250px;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(27,2,96,1) 0%, rgba(102,0,204,1) 92%);
+    flex-grow: 2;
+}
+#imprenta{
+    background-color: #35B6C9;
+    /* width: 100%; */
+    height: 16.6%;
+    color: white;
+    font-size: 24px;
+    flex-grow: 1;
+}
+#informacion{
+    background-color: #1677b3;
+    /* width: 100%; */
+    height: 16.6%;
+    color: white;
+    font-size: 24px;
+    flex-grow: 1;
+
+}
+#hrecomendadas{
+    background-color: #81246d;
+    /* width: 100%; */
+    height: 16.6%;
+    color: white;
+    font-size: 24px;
+    flex-grow: 1;
+
+}
+#expresate{
+    background-color: #2a1250;
+    /* width: 100%; */
+    height: 16.6%;
+    color: white;
+    font-size: 24px;
+    flex-grow: 1;
+
+}
+.icono{
+    width: 80px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.seccion{
+    background-color: #35B6C9;
+}
+.seccion1{
+    background-color: #1677b3;
+}
+.seccion2{
+    background-color: #81246d;
+}
+.seccion3{
+    background-color: #2a1250;
+}
+
+.circulo{
+    border: white 3px solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+   margin: 30px;
+   padding: 10px;
+}
+.imagen_articulo{
+    width: 40%;
+    margin: 20px;
+}
+.cuerpo_seccion{
+    height: auto;
     background-color: white;
+    width: 100%;
+    margin: 0;
+}
+.selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    color: black;
+
+}
+.selector p {
+    padding: 30px;
+    margin: 0;
+    
+}
+select{
+    background-color: lightgray;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+    
+}
+.titulosecc{
+    font-size: 30px;
+    text-align: center;
+
+}
+.selector_p{
+    font-size: 30px;
+    color: #2a1250;
+}
+.mensaje{
+    display: none;
 }
 
 .boton-primario {
+    display: block;
     width: 320px;
-    padding: 14px 0; /* Relleno interno */
-    background-color: #FF3333; /* Color de fondo por defecto */
-    border: none; /* Sin borde */
-    border-radius: 16px; /* Bordes redondeados */
-}
-
-.boton-primario a {
-    text-align: center; /* Centra el texto */
-    line-height: 16px; /* Alinea verticalmente el texto (ajusta según sea necesario) */
-    display: block; /* Asegúrate de que el enlace ocupe todo el botón */
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px; /* Tamaño de la fuente */
+    padding: 14px 0;
+    background-color: #FF3333;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 12px;
     font-weight: 700;
-}
-
-.boton-secundario {
-    width: 320px;
-    padding: 13px 0; /* Relleno interno */
-    background-color: white; /* Color de fondo por defecto */
-    border: 1px solid #999999; /* Sin borde */
-    border-radius: 16px; /* Bordes redondeados */
-}
-
-.boton-secundario a {
-    display: block; /* Asegúrate de que el enlace ocupe todo el botón */
-    width: 100%;
-    height: 100%;
-    text-align: center; /* Centra el texto */
-    line-height: 16px; /* Alinea verticalmente el texto (ajusta según sea necesario) */
-    color: black;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px; /* Tamaño de la fuente */
-    font-weight: 700;
-}
-
-.pantalla-crear-iniciar {
-    display: flex;
-    align-items: flex-end;
-}
-
-.btn-crear-iniciar{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-
-
-.mensaje{
-    display: none;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 361px) {
@@ -90,4 +213,5 @@ a:hover { color: white; font-family: "Open Sans", sans-serif; text-decoration: n
         position: relative;
         z-index: 1000;
     }
+    
 }
