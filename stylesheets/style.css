@@ -203,7 +203,7 @@ h2 {
     display: none;
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 361px) {
     body{
         overflow: hidden;
     }
