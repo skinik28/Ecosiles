@@ -193,13 +193,22 @@ h2 {
     gap: 88px;
 }
 
+.mensaje {
+    display: none; /* Por defecto, ocultar */
+}
+
+@media screen and (min-width: 361px) {
+    .mensaje {
+        display: flex; /* Mostrar solo en pantallas más anchas */
+    }
+}
 
 
 
 
 
 
-.mensaje{
+/* .mensaje{
     display: none;
 }
 
@@ -223,4 +232,4 @@ h2 {
         position: relative;
         z-index: 1000;
     }
-}
+} */
