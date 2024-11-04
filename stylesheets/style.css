@@ -316,6 +316,7 @@ h4 {
     width: 320;
     height: 52px;
     border-top: 1px solid #999999;
+    padding-top: 8px;
 }
 
 .menu-item {
