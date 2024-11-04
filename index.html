@@ -2,31 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport">  -->
-    <meta name="viewport" content="width=360, initial-scale=3.0">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=360, initial-scale=3.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecosiles</title>
-
-    <script>
-        // Función para cambiar el viewport en modo inspector
-        function adjustViewport() {
-            const viewport = document.getElementById('viewport');
-            if (window.innerWidth > 768) { // Verifica si el ancho del viewport es mayor que 768px
-                viewport.setAttribute('content', 'width=360, initial-scale=3.0');
-            } else {
-                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
-            }
-        }
-
-        window.addEventListener('resize', adjustViewport);
-        window.addEventListener('DOMContentLoaded', adjustViewport);
-    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./fonts/style.css">
 </head>
 
 <body>
@@ -37,7 +22,6 @@
 
 
     <div class="pantalla" id="crear-iniciar">
-        <img src="./images/barra de estado.png" alt="">
         <div class="items-crear-iniciar">
             <img src="./images/escudo.png" alt="">
             <p class="p-frase">"Contribuye para un colegio mas <br> limpio, un clic a la vez"</p>
@@ -55,7 +39,6 @@
 <!-- --------------------------------------------------------------- -->
 
     <div class="pantalla" id="crear">
-        <img src="./images/barra de estado.png" alt="">
         <div class="items-crear">
             <h2>Crear cuenta</h2>
             <div class="subitems-crear">
@@ -75,7 +58,7 @@
         
                 <div class="items-btn-crear">
                     <button class="boton-primario">
-                    <a href="#">Crear cuenta</a>
+                    <a href="#inicio">Crear cuenta</a>
                     </button>
                     <p class="p-text-ayuda">Vincula tu cuenta de Google para iniciar sesión más rápido</p>
                     <button class="boton-secundario">
@@ -90,7 +73,6 @@
 <!-- --------------------------------------------------------------- -->
 
 <div class="pantalla" id="iniciar">
-    <img src="./images/barra de estado.png" alt="">
     <div class="items-iniciar">
         <h2>Iniciar sesión</h2>
         <div class="subitems-iniciar">
@@ -100,12 +82,13 @@
                 <input type="email" id="correo" name="correo" placeholder="Correo electrónico" class="text-inputs" required>
 
                 <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña (más de 8 caracteres)" class="text-inputs" required>
+                <p class="p-text-ayuda">¿Olvidaste tu contraseña?</p>
             </form>
     
             <div class="items-btn-iniciar">
-                <p class="p-text-ayuda">¿Olvidaste tu contraseña?</p>
+                
                 <button class="boton-primario">
-                <a href="#">Crear cuenta</a>
+                <a href="#inicio">Iniciar sesión</a>
                 </button>
                 <p class="p-text-ayuda">Si ya tienes una cuenta de Google vinculada</p>
                 <button class="boton-secundario">
@@ -116,7 +99,70 @@
     </div>
 </div>
 
+<!-- --------------------------------------------------------------- -->
+
+<div class="pantalla" id="inicio">
+    <div class="marca">
+        <img src="./images/escudo-mini.png" alt="">
+        <h3>Ecosiles</h3>
+    </div>
+    <h4>Reciclaje de residuos</h4>
+    <div class="grid-container">
+        <div class="grid-item item-plastico" id="">
+            <span class="icon-grid icon-plastico"></span>
+            <a class="text-boton" href="./plastico-si.html">Plástico y envases</a>
+        </div>
+        <div class="grid-item item-papel" id="">
+            <span class="icon-grid icon-papel"></span>
+            <a class="text-boton" href="#">Papel y cartón</a>
+        </div>
+        <div class="grid-item item-vidrio" id="">
+            <span class="icon-grid icon-vidrio"></span>
+            <a class="text-boton" href="#">Vidrio</a>
+        </div>
+        <div class="grid-item item-organico" id="">
+            <span class="icon-grid icon-organico"></span>
+            <a class="text-boton" href="#">Orgánico</a>
+        </div>
+        <div class="grid-item item-no-aprovechable" id="">
+            <span class="icon-grid-no icon-no"></span>
+            <a class="text-boton" href="#">No aprovechables</a>
+        </div>
+    </div>
+    <h4>También puedes</h4>
+    <div class="items-btn-inicio">
+               
+        <button class="boton-secundario">
+        <a href="#">Reducir</a>
+        </button>
+        <button class="boton-secundario">
+            <a href="#">Reutilizar</a>
+        </button>
+
+    </div>
+    <div class="menu">
+        <div class="pantalla-icon-inicio menu-item menu-inicio">
+            <span class="icon-menu icon-inicio"></span>
+            <p class="text-menu">Inicio</p>
+        </div>
+        <div class="menu-item menu-intercambio">
+            <span class="icon-menu icon-intercambio"></span>
+            <p class="text-menu">Intercambio</p>
+        </div>
+        <div class="menu-item menu-actividades">
+            <span class="icon-menu icon-actividades"></span>
+            <p class="text-menu">Actividades</p>
+        </div>
+        <div class="menu-item menu-perfil">
+            <span class="icon-menu icon-perfil"></span>
+            <p class="text-menu">Perfil</p>
+        </div>
+    </div>
+
+</div>
     
+<!-- --------------------------------------------------------------- -->
+
 
 
 </body>
