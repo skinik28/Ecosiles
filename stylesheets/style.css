@@ -15,8 +15,20 @@ h1{
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 16px;
     font-weight: 700;
 }
 
@@ -30,10 +42,22 @@ h2 {
     line-height: 20px;
 }
 
+.text-menu {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 600;
+}
+
+.text-boton {
+    font-size: 12px;
+    line-height: 16px;;
+    font-weight: 700;
+}
+
 .pantalla {
     width: 100%;
     height: 100vh;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
     /* background-color: white; */
 }
 
@@ -71,6 +95,8 @@ h2 {
 }
 
 
+
+
 /* ============================================ */
 /* SECCIONES */
 /* ============================================ */
@@ -80,7 +106,7 @@ h2 {
 #crear-iniciar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .items-crear-iniciar {
@@ -113,7 +139,7 @@ h2 {
     text-align: center;
     background-image: url(../images/semicirculo.png);
     background-repeat: no-repeat;
-    background-position: center 32px;
+    /* background-position: center 32px; */
 }
 
 .form-container-crear input {
@@ -142,6 +168,8 @@ h2 {
 }
 
 .items-crear {
+    position: relative;
+    top: 88px;
     display: flex;
     flex-direction: column;
     gap: 88px;
@@ -156,7 +184,7 @@ h2 {
     text-align: center;
     background-image: url(../images/semicirculo.png);
     background-repeat: no-repeat;
-    background-position: center 32px;
+    /* background-position: center 32px; */
 
 }
 
@@ -172,6 +200,7 @@ h2 {
 .form-container-iniciar {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
 }
 
@@ -184,14 +213,135 @@ h2 {
 .subitems-iniciar {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
 }
 
 .items-iniciar {
+    position: relative;
+    top: 88px;
     display: flex;
     flex-direction: column;
     gap: 88px;
 }
+
+/* ---INICIO--- */
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#inicio .marca {
+    display: flex;
+    gap: 8px;
+    color: #FF0000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 152px);
+    grid-template-rows: repeat(2, 144px) 144px;
+    gap: 16px;
+    justify-content: center;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 152px;
+    height: 144px;
+    border: 1 soliod #E6E6E6;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-no-aprovechable {
+    grid-column: span 2;
+    width: 320px;
+}
+
+.grid-container .item-plastico a{
+    color: #CC9900 ;
+}
+.grid-container .item-papel a{
+    color: #0052CC;
+}
+.grid-container .item-vidrio a{
+    color: #666666;
+}
+.grid-container .item-organico a{
+    color: #00CC52;
+}
+.grid-container .item-no-aprovechable a{
+    color: black;
+}
+
+.grid-container .item-plastico span{
+    color: #CC9900 ;
+}
+.grid-container .item-papel span{
+    color: #0052CC;
+}
+.grid-container .item-vidrio span{
+    color: #666666;
+}
+.grid-container .item-organico span{
+    color: #00CC52;
+}
+.grid-container .item-no-aprovechable span{
+    color: black;
+}
+
+.icon-grid {
+    font-size: 48px;
+}
+
+.icon-grid-no {
+    font-size: 35px;
+}
+
+.items-btn-inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+    width: 320;
+    height: 52px;
+    border-top: 1px solid #999999;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    width: 68px;
+}
+
+.icon-menu {
+    font-size: 24px;
+}
+
+.pantalla-icon-inicio {
+    color: #FF0000;
+}
+
+
+
+
+
+
+
+
 
 
 
